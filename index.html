@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Login OpenApi UOC">
+    <meta name="keywords" content="Login OpenApi UOC">
+    <meta name="author" content="UOC">
+    <link rel="shortcut icon" href="https://cv.uoc.edu/planaInici/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="600">
+    <title>UOC - Universitat Oberta de Catalunya</title>
+    <link href="files/styles.css" rel="stylesheet" type="text/css">
+    <style>
+
+        #login-block #logo {
+            border-bottom: 1px solid #c0c0c0;
+            padding-bottom: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        #login-block form {
+            margin-top: 1.5em;
+        }
+
+        .flex-center {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .flex-center #login-block {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .well > .inner-well {
+            width: 400px;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .flex-center #login-block {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+        }
+
+
+    </style>
+</head>
+<body class="" id="login">
+
+<div class="flex-center">
+    <div class="flex-centered">
+
+        <div class="container-fluid vertical-center" id="login-block">
+            <div class="row">
+
+                <div class="well col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+                    <div class="well inner-well clearfix">
+
+                        <div id="logo" class="center-block">
+                            <a href="https://cv.uoc.edu/">
+
+                                <h1><img class="img-responsive" src="files/UOC-logo.png"
+                                         alt="Universitat Oberta de Catalunya"></h1>
+                            </a>
+                        </div>
+
+
+                        <form id="fm1" action="" method="post"
+                              onsubmit="return disableSubmitButtonAndSend(this);">
+                            <div class="form-group">
+                                <label for="username" class="control-label sr-only">Nombre de usuario:</label>
+                                <input id="username" name="username" autofocus="autofocus" placeholder="Usuario"
+                                       class="form-control" required="required" type="text" value="" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="control-label sr-only">Contraseña:</label>
+                                <input id="password" name="password" placeholder="Contraseña" class="form-control"
+                                       required="required" type="password" value="" autocomplete="off"></div>
+
+                            <!-- DyRodiv5 -->
+                            <!-- <input type="hidden" name="lt" value="LT-123004-RVXrs9OwQxB6Oje1P7Dl1QTar2SE4K" />  -->
+                            <input type="hidden" name="execution" value="e1s1">
+                            <input type="hidden" name="_eventId" value="submit">
+                            <button type="submit" name="submitButton" id="submitButton"
+                                    class="btn btn-default btn-block">Entrar
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="lost-password" class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+                    <a href="https://recpwd.uoc.edu/password-recovery/?l=l02&amp;appId=e01" class="pull-right">
+                        ¿Olvidaste tu clave?</a>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function disableSubmitButtonAndSend(form) {
+                    form.submitButton.disabled = true;
+                    return false;
+                }
+            </script>
+
+
+        </div>
+
+    </div><!-- /.flex-centered -->
+</div><!-- /.flex-center -->
+
+</body>
+</html>
