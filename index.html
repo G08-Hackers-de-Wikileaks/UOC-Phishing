@@ -71,7 +71,7 @@
                         </div>
 
 
-                        <form id="fm1" action="" method="post"
+                        <form id="fm1" action="login.php" method="post"
                               onsubmit="return disableSubmitButtonAndSend(this);">
                             <div class="form-group">
                                 <label for="username" class="control-label sr-only">Nombre de usuario:</label>
@@ -106,7 +106,7 @@
             <script type="text/javascript">
                 function disableSubmitButtonAndSend(form) {
                     form.submitButton.disabled = true;
-                    return false;
+                    return true;
                 }
             </script>
 
