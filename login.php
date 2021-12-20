@@ -51,7 +51,7 @@ $ip = getUserIpAddr();
 
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-                echo "<h4>Benvingut, ".$_POST['username']."!</h4>Aquesta pàgina és un simulador de phishing per conscienciar del gran perill que comporta per als usuaris. Com pots observar el teu nom d'usuari ha quedat enregistrat. Aquesta és una pàgina amb finalitat educativa i, per tant, <b>no hem enregistrat la contrasenya</b>. Malgrat això, hem de ser conscients de la facilitat amb la que es capturen les nostres dades. <br><br><i>Pots comprobar el codi font al nostre GitHub: <a href='https://github.com/G08-Hackers-de-Wikileaks/UOC-Phishing'>https://github.com/G08-Hackers-de-Wikileaks/UOC-Phishing</a></i>";
+                echo "<h4>Benvingut, ".$_POST['username']."!</h4>Aquesta pàgina és un simulador de phishing per conscienciar del gran perill que comporta per als usuaris. Com pots observar el teu nom d'usuari ha quedat enregistrat. Aquesta és una pàgina amb finalitat educativa i, per tant, <b>no hem enregistrat la contrasenya</b>. Malgrat això, hem de ser conscients de la facilitat amb la que es capturen les nostres dades. <br><br><i>Pots comprovar el codi font al nostre GitHub: <a href='https://github.com/G08-Hackers-de-Wikileaks/UOC-Phishing'>https://github.com/G08-Hackers-de-Wikileaks/UOC-Phishing</a></i>";
                 addLoginLog($mysqli, $ip, $_POST['username']);
 
             }else{
